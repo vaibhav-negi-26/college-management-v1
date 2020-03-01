@@ -1,0 +1,63 @@
+
+<h1 class="my-4 text-center" style="margin: auto"><u>Feedback Form</u></h1>
+<section class="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 mx-auto my-4">
+                <form method="post" data-form-title="CONTACT US">
+
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control box-shadow2 text-muted" name="entry.2073550191" required
+                            placeholder="Name" data-form-field="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control box-shadow2 text-muted" name="entry.1526055583" required
+                            placeholder="Email" data-form-field="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" class="form-control box-shadow2 text-muted" name="entry.1472741501" required
+                            placeholder="Phone" data-form-field="Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="textarea" class="form-control box-shadow2 text-muted" name="entry.304374637"
+                            placeholder="Message" rows="7" required data-form-field="Message"></textarea>
+                    </div>
+                    <div class="my-md-4">
+                        <button type="submit" onclick="postToGoogle()"
+                            class="btn btn-lg ">Submit  <i style="font-size: 1rem;" class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        function postToGoogle() {
+            var field1 = $("#name").val();
+            var field2 = $("#email").val();
+            var field3 = $("#phone").val();
+            var field4 = $("#textarea").val();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSdSgZJjYypZ09SJr-fvTOH0hLzHtKhUklh-op12TIpmAAaZYg/formResponse?",
+                data: {
+                    "entry.2073550191": field1,
+                    "entry.1526055583": field2,
+                    "entry.1472741501": field3,
+                    "entry.304374637": field4
+                },
+                type: "POST",
+                dataType: "xml",
+                success: function (d) {},
+                error: function (x, y, z) {
+                    console.log('done sending');
+                    window.alert('Your form has been submitted')
+                    location.reload();
+                }
+            });
+        }
+    </script>
+</section>

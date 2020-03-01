@@ -1,0 +1,188 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- 1st -->
+
+            <div class="col-md-12 p-5">
+                <div class="card border-info box-shadow">
+                    <div class="card-header">
+                        <b><i>Student ({{studentinfo[show].lastname}}, {{studentinfo[show].firstname}})</i></b>
+                    </div>
+                    <div class="card-body ">
+                        <div class="row">
+                            <div class="col-md-8 my-auto">
+                                <table>
+                                    <tr>
+                                        <td class="lead">
+                                            Id
+                                        </td>
+                                        <td> </td>
+                                        <td class="text-muted">
+                                            {{studentinfo[show].id}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lead">
+                                            Student No
+                                        </td>
+                                        <td> </td>
+                                        <td class="text-muted">
+                                            {{studentinfo[show].studentno}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lead">
+                                            Name
+                                        </td>
+                                        <td> </td>
+                                        <td class="text-muted">
+                                            {{studentinfo[show].firstname}}{{studentinfo[show].middlename}}{{studentinfo[show].lastname}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lead">
+                                            Deptartment
+                                        </td>
+                                        <td> </td>
+                                        <td class="text-muted">
+                                            {{studentinfo[show].dept}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lead">
+                                            Status
+                                        </td>
+                                        <td> </td>
+                                        <td class="text-muted">
+                                            {{studentinfo[show].status}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lead">
+                                            Date of birth
+                                        </td>
+                                        <td style="width: 50px"></td>
+                                        <td class="text-muted">
+                                            {{studentinfo[show].dob}}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4  d-flex justify-content-center">
+                                <img src='{{studentinfo[show].pic}}' alt="profilepic" class="img-thumbnail rounded m-3"
+                                    style="max-height: 200px; max-width: 200px">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 2nd -->
+
+        <div class="row">
+
+            <div class="col-md-8 mb-4">
+                <div class="card box-shadow">
+                    <div class="card-header">
+                        <b>Overview</b>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td class="text-bold">
+                                    Father
+                                </td>
+                                <td> </td>
+                                <td class="text-muted">
+                                    {{studentinfo[show].father}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold">
+                                    Address
+                                </td>
+                                <td> </td>
+                                <td class="text-muted">
+                                    {{studentinfo[show].add}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold" style="width: 100px">
+                                    Phone No.
+                                </td>
+                                <td> </td>
+                                <td class="text-muted">
+                                    {{studentinfo[show].phone}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold">
+                                    Email id
+                                </td>
+                                <td> </td>
+                                <td class="text-muted">
+                                    {{studentinfo[show].email}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold">
+                                    Blood
+                                </td>
+                                <td> </td>
+                                <td class="text-muted">
+                                    {{studentinfo[show].bloodGroup}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold">
+                                    Year
+                                </td>
+                                <td style="width: 50px"> </td>
+                                <td class="text-muted">
+                                    {{studentinfo[show].Year}}
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card text-white bg-info box-shadow2">
+                    <div class="card-header">
+                        <b> Academic History </b>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center">
+                            <ol class=" px-0">
+                                <!-- style="border: 1px solid black" -->
+                                <p class="text-bold border-bottom" >Perform Index</p>
+                                <li class="text-center" ng-repeat="x in studentinfo[show].grade">
+                                    {{x.title}}
+                                </li>
+                            </ol>
+                            <ul>
+                                <p class="text-bold border-bottom">Grade / Value</p>
+                                <li class="list-unstyled text-center" ng-repeat="x in studentinfo[show].grade">
+                                        {{x.marks}}
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!--  -->
+    </div>
+</section>

@@ -1,0 +1,218 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Parisienne|Roboto:400,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f7f8;
+    cursor: default;
+}
+
+/* spiner */
+
+.spinner{
+    width: 80px;
+    height: 80px;
+    
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #0052D4;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+  height:100%;
+  width:100%;
+  background:rgba(0, 0, 0, 0.9);
+  position:fixed;
+  left:0;
+  top:0;
+ }
+
+/* header */
+
+.header {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    /* border-bottom: 1px solid #000; */
+}
+
+.header p {
+    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 2.3em;
+    background-color: #0052D4;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+}
+
+.header p:hover {
+    /* background: linear-gradient(to right, #c31432, #240b36);  */
+    /* background: linear-gradient(to right, #757f9a, #d7dde8); */
+    background-color: rgba(0, 82, 212, 0.5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all ease-in-out 0.5s;
+}
+
+.log-out button {
+    font-family: 'Roboto', sans-serif;
+    background: #0052D4;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 50px;
+    font-size: 3vmin;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.log-out button:hover {
+    color: #0052D4;
+    background-color: #f3f7f8;
+}
+
+.log-out button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #0052D4;
+    transition: 400ms ease all;
+}
+
+.log-out button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.log-out button:hover:before,
+.log-out button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+
+}
+
+/* nav bar */
+.navbar{
+    background-color: #0052D4 !important;
+    color: white !important;
+}
+.nav-item a{
+    text-decoration: none;
+    color: white !important;
+}
+.nav-item .dropdown-menu a{
+    text-decoration: none;
+    color: black !important;
+}
+.nav-section {
+    background-color: rgb(96, 141, 212) !important;
+    color: white !important;
+}
+
+.nav-section2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    /* background: linear-gradient(to right, #4364F7, #6FB1FC); */
+    background-color: #0052D4 !important;
+    color: white;
+    box-shadow: 0.01rem 0.01rem 0.35rem 0.25rem rgba(0, 0, 0, 0.25);
+    font-size: 1.2rem;
+}
+
+.nav-bar a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    color: #0052D4;
+    background-color: #f3f7f8;
+    transition: all ease-in-out 0.75s;
+
+}
+
+/* feedback */
+
+.feedback {
+    
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+.feedback button{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: #1D976C;
+    
+}
+.feedback input{
+font-size: 1.5rem;
+}
+.feedback textarea{
+    font-size: 1.5rem;
+}
+
+.feedback button:hover{
+    box-shadow: 0.1rem 0.1rem 1rem 0.5em rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.3s;
+}
+
+/* studentinfo */
+.box-shadow{
+    box-shadow: 0.2rem 0.2rem 0.5rem  rgba(0, 0, 0, 0.5);
+}
+.box-shadow2{
+    box-shadow: 0.2rem 0.2rem 0.25rem  rgba(0, 0, 0, 0.5);
+}
+/* feepayment */
+
+.fee .cc-img {
+    margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+    background-color: #434e5a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'DM Serif Display', serif;
+}

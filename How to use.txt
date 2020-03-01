@@ -1,0 +1,38 @@
+File only works on server so Host this website or use localhost.
+
+Html, CSS, Bootstrap4, VanilaJS, Jquery, AngularJS these are used in making this website so have some knowledge of these to understand the code.
+
+-----------------------------------------------------------------------
+
+use this id and passwords to log in:
+{
+        id: 1,
+        name : "Vaibhav",
+        emailId: '10vaibhavsinghnegi@gmail.com',
+        password: 'vaibhav@26'
+    },
+    {
+        id: 2,
+        name : "Keshav",
+        emailId: 'keshavy178@gmail.com',
+        password: 'keshav@18'
+    },
+    {
+        id: 3,
+        name : "Ayush",
+        emailId: 'ayushparmar684@gmail.com',
+        password: 'ayush@13'
+    },
+    {
+        id: 4,
+        name : "Vidushi",
+        emailId: 'vidushi516@gmail.com',
+        password: 'vidushi@09'
+    },
+    {
+        id: 5,
+        name : "Ashmeet",
+        emailId: 'abc@gmail.com',
+        password: '123456'
+    }
+

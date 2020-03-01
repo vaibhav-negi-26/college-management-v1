@@ -1,0 +1,137 @@
+<section>
+    <div class="container">
+        <!-- part 1 -->
+        <div class="row">
+
+            <h1 class="my-4 " style="margin: auto"><u>Notice Board And Latest Update</u></h1>
+
+            <!-- slider -->
+
+            <div class="d-flex mb-5 ">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../image/slider/1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../image/slider/2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../image/slider/3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../image/slider/4.jpg" alt="fourth slide">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- slider -->
+        </div>
+
+        <!-- part 2 -->
+        <div class="row">
+
+            <div class="col-md-6 py-2">
+                <div class="card border-info box-shadow">
+                    <div class="card-header text-center">
+                        Notice Board
+                    </div>
+                    <div class="card-body text-info ">
+                        <blockquote class="blockquote mb-0">
+                            <marquee direction="up" scrolldelay=200>
+                                <ul>
+                                    <li ng-repeat="x in notice">{{x}}</li>
+                                </ul>
+                            </marquee>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 py-2 ">
+                <div class="card border-info box-shadow">
+                    <div class="card-header text-center">
+                        Latest Updates
+                    </div>
+                    <div class="card-body text-info">
+                        <blockquote class="blockquote mb-0">
+                            <marquee direction="up" scrolldelay=200>
+                                <ul>
+                                    <li ng-repeat="x in updates"><a class="text-info" href="{{x.link}}">{{x.title}}</a>
+                                    </li>
+                                </ul>
+                            </marquee>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- part 3 -->
+        <h1 class="my-4"><u>Live Feeds</u></h1>
+
+        <div class="row mb-5">
+
+            <div class="col-md-4 d-flex d-md-block justify-content-center ">
+                <div class="card mb-4 box-shadow " style="width: 18rem;">
+                    <img class="card-img-top" src="../image/card/card1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="text-muted">DIT University Admission Counseling at Patna on 10th- 12th July 2019. For
+                            any query, please contact Mr. Azharuddin, Ms. Amrita Singh
+                            Explore More: <a class="text-muted"
+                                href="http://bit.ly/patna_counseling_ ">http://bit.ly/patna_counseling_ </a></p>
+                        <p class="text-muted">#DITUniversity #MadeInDIT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="card mb-4 box-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../image/card/card2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="text-muted">The event of the International Day of Yoga.
+                        </p>
+                        <p class="text-muted">
+                            #InternationalYogaDay #DITUniversity
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-4 box-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../image/card/card3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="text-muted">United Nations Development Programme visited DIT University for Academic
+                            Collaboration.
+                        </p>
+                        <p class="text-muted">
+                            #DITUniversity
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex d-md-block justify-content-center">
+                <div class="card box-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../image/card/card4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="text-muted">DIT University Admission Counseling at Haldwani on 13TH – 14th July 2019.
+                            For any query, please contact Mr. Rohin Singh (+91 9639001954) Explore More: <a
+                                class="text-muted"
+                                href="http://bit.ly/Halwani_Counseling_">http://bit.ly/Halwani_Counseling_</a></p>
+                        <p class="text-muted">#DITUniversity #MadeInDIT</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

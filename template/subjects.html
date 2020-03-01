@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="my-4 text-center"><u>Current Subjects</u></h1>
+    <div class="row">
+
+        <div class="col-md-4 p-4" ng-repeat="x in sub">
+
+            <div class="card box-shadow2 bg-light " style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="{{x.pic}}" alt="{{x.title}}" style="width: 200px;">
+                <div class="card-header ">
+                    <h5 class="card-title">{{x.title}}</h5>
+                    <p class="card-text">Grade : {{x.point}}</p>
+                    <p class="card-text">{{x.content}}</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>

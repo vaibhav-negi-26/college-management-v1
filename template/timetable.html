@@ -1,0 +1,23 @@
+<div class="container">
+        <h1 class="my-4 text-center"><u>Time Table</u></h1>
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Days</th>
+                    <th scope="col">1 </th>
+                    <th scope="col">2</th>
+                    <th scope="col">3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in timetable">
+                    <th scope="row">{{x.title}}</th>
+                    <td>{{x.first}}</td>
+                    <td>{{x.second}}</td>
+                    <td>{{x.third}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
